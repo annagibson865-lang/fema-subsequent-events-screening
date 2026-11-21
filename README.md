@@ -57,5 +57,3 @@ This is a class project, not paid, employer or client work; the firm and clients
 - **Another AI tool** suggested the retrospective-pilot idea; the student wrote the ask in their own words.
 - **The student** chose the scenario and screen rules, ran the Excel check, and wrote the claim, ask, SCR boxes and reversal sentence.
 - **Not yet re-run by the student:** the Python scripts.
-# fema-subsequent-events-screening
-GMBA634 class project: screening fictional client facilities against FEMA disaster declarations for audit subsequent-events review
