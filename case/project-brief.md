@@ -30,11 +30,11 @@ In audit work, the student helps review subsequent events by asking management w
 | Year-end (December 31) and planned report date | ILLUSTRATIVE scenario inputs: year-end 2025-12-31, planned report date 2026-03-31 (review period 2026-01-01 to 2026-03-31) | Defines the review period |
 | Typical report-dating lag; how often follow-up is needed | Not available — the student will not estimate these | — |
 | Pivot: distinct declarations matching ≥1 facility = 0; facilities with ≥1 match = 0 of 5 (review period 2026-01-01 to 2026-03-31, illustrative) | Measured by the student in Excel (2026-11-21): state = PA; designatedArea = Erie, Crawford, Mercer, Venango, Warren; plus fipsCountyCode 000; no dates in the review period. Also AI-run with the same result. | Claim and ask |
-| Other profile counts in ai-component/project-instructions.md | AI-run (student still to check) | Context |
+| Other profile counts in ai-component/project-instructions.md | AI-run; the student's re-run of counts.py (2026-11-22) confirmed 70,599 rows, 5,286 declarations, 1,617 statewide rows, 623 blank incidentEndDate | Context |
 | inputs/facilities_illustrative.csv | ILLUSTRATIVE: five fictional facilities, real PA county names | Screen input |
 | inputs/test_declarations_illustrative.csv | ILLUSTRATIVE: six fictional declarations (3 should match, 3 should not) | Shows the flag rules |
-| outputs/screen_results_fema_2026Q1.csv | AI-run on real FEMA data (0 of 5 flagged); matches the student's Excel check; script not yet re-run by the student | Sample output |
-| outputs/screen_results_test_illustrative.csv | ILLUSTRATIVE, AI-run (student still to re-run) | Demonstration only, not a finding |
+| outputs/screen_results_fema_2026Q1.csv | Real FEMA data (0 of 5 flagged); matches the student's Excel check; re-run by the student in GitHub Codespaces 2026-11-22 with the same result | Sample output |
+| outputs/screen_results_test_illustrative.csv | ILLUSTRATIVE; re-run by the student 2026-11-22 (5 of 5 flagged, 3 test declarations) | Demonstration only, not a finding |
 | inputs/pilot_log_illustrative.csv | Blank template: real pilot results are confidential and will not be published | Pilot proposal |
 
 ## The AI idea
@@ -54,7 +54,7 @@ Output: a table with "FEMA match found" / "No FEMA match found" per facility; fo
 
 ## What a hiring manager should conclude
 "I want a hiring manager to see that I can take a question that comes up during audit wrap-up and build a tool that helps the team answer it. In this project, I use public FEMA data and Python to flag facilities that may warrant a follow-up with management. I also want them to see how I use AI in my work. I can use it to help build and document the tool, verify the output against the source data, and apply my own judgment about what the results mean for the audit."
-(Verifying output against the source: **planned**, not yet done.)
+(Verifying output against the source: done for the screen — Excel check 2026-11-21 and script re-run in GitHub Codespaces 2026-11-22.)
 
 ## Scenario decision (2026-11-21)
 Student chose option (a): keep the five counties and the Jan 1 – Mar 31, 2026 review period and report the measured zero. The flag logic will be shown with a separate fictional test file (`test_declarations_illustrative.csv`), labelled illustrative and never mixed with FEMA results. (Option (a) was Claude's recommendation; the student chose it.)

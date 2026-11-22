@@ -47,13 +47,12 @@ python scripts/pilot_summary.py inputs/pilot_log_illustrative.csv
 
 ## Status
 - **Measured by the student:** 0 FEMA declarations and 0 of 5 facilities matched for January 1 – March 31, 2026 (Excel; filters in case/claim-and-ask.md).
-- **AI-run, matches the student's check:** the same result from `screen_facilities.py` on the FEMA file.
+- **Re-run by the student (GitHub Codespaces, 2026-11-22):** all four scripts, with output matching the AI run: 1,252 PA rows / 64 PA declarations; 0 of 5 facilities flagged on the FEMA file; 5 of 5 on the fictional test file (3 test declarations); pilot log "not yet testable".
 - **Illustrative:** facilities, review dates, and the test-file results (3 fictional declarations match, 3 correctly do not). The test results demonstrate the rules; they are not findings.
-- **Not done:** the retrospective pilot (proposal only). The student has not yet re-run the scripts.
+- **Not done:** the retrospective pilot (proposal only).
 
 ## AI use
 This is a class project, not paid, employer or client work; the firm and clients are withheld and all client details are fictional. AI use was encouraged by the professor.
 - **Claude (Anthropic)** profiled the dataset, wrote the project instructions and the brief from the student's interview answers, wrote and tested the three Python scripts and the illustrative input files, tested the student's claim, ask and SCR boxes, and drafted this README's structure, file list, run instructions and AI-use section, and added the files to this repo through the student's signed-in browser (the student merges the pull request).
 - **Another AI tool** suggested the retrospective-pilot idea; the student wrote the ask in their own words.
-- **The student** chose the scenario and screen rules, ran the Excel check, and wrote the claim, ask, SCR boxes and reversal sentence.
-- **Not yet re-run by the student:** the Python scripts.
+- **The student** chose the scenario and screen rules, ran the Excel check, re-ran all four scripts in GitHub Codespaces on 2026-11-22 (output matched), and wrote the claim, ask, SCR boxes and reversal sentence.
