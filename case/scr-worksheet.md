@@ -24,12 +24,12 @@ Yes, the engagement manager should approve a small retrospective pilot by the st
 
 ## Box 5 — Evidence
 - Measured in Excel using public FEMA data and illustrative facilities. From January 1 through March 31, 2026, the screen matched 0 distinct FEMA declarations and flagged 0 of 5 facilities. I filtered to Pennsylvania and checked Erie, Crawford, Mercer, Venango, and Warren counties, plus statewide designations (county code `000`). A record qualified if its incident dates overlapped the review period or its declaration date fell within it.
-- Fictional test cases, run with AI assistance. The test file demonstrates that the script flags a pre-year-end incident declared during the review period and flags all five facilities when a qualifying statewide designation appears.
+- Fictional test cases, verified by rerunning the script myself. I confirmed that the script flags a facility when a pre-year-end incident is declared during the review period and flags all five facilities when a qualifying statewide Pennsylvania designation appears.
 - Evidence still needed. The Excel check covers one illustrative period. I haven't measured whether the screen would have changed the team's follow-up on a completed engagement or how much time it would add.
 
 Hypothesis. The FEMA screen may identify a specific event worth asking management about that the standard subsequent-events inquiry did not surface. The retrospective pilot would test that.
 
-*Test: OK — facts and beliefs separated, each with status. Test-file result re-run by the student in GitHub Codespaces on 2026-11-22 (5 of 5 flagged, matching the AI run).*
+*Test: OK — facts and beliefs separated, each with status. Test-file result re-run by the student in GitHub Codespaces on 2026-11-22 (5 of 5 flagged, matching the AI run); the student checked the match_reason column (Crawford pre-year-end row; statewide rows for all five). Bullet 2 revised by the student 2026-11-22.*
 
 ## Box 6 — What would change my mind (reversal sentence)
 My planned threshold is at least one new, specific question for management about potential facility damage, service interruptions, or significant costs across five completed reviews. If the pilot log of FEMA flags and prior management responses shows zero such questions, I would recommend that the engagement manager keep the standard subsequent-events inquiry as the sole routine step.
